@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobaLane India - Premium Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Loading Spinner -->
+<div id="loader" class="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+    <span>🎉 🇮🇳 Great Indian Festival Live! Up to 70% OFF + Free Shipping | Use Code: FESTIVE2025</span>
+    <button class="close-announcement">&times;</button>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo" data-page="home">
+            <i class="fas fa-globe-asia"></i>
+            <span>GlobaLane</span>
+            <small class="india-tag">🇮🇳 India</small>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="shop" data-category="all">Shop</a></li>
+                <li><a href="#" data-page="deals">Today's Deals</a></li>
+                <li><a href="#" data-page="support">Support</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="globalSearchInput" placeholder="Search 250+ products...">
+            </div>
+            <button class="icon-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+                <span class="badge" id="wishlistCount">0</span>
+            </button>
+            <button id="cartBtn" class="cart-btn-header">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main id="app"></main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="logo"><i class="fas fa-globe-asia"></i> GlobaLane India</div>
+                <p>India's premier destination for global shopping with curated products from top brands.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-amazon-pay"></i>
+                </div>
+            </div>
+            <div>
+                <h4>Shop by Category</h4>
+                <a href="#" data-page="shop" data-category="electronics">Electronics (68)</a>
+                <a href="#" data-page="shop" data-category="fashion">Fashion (72)</a>
+                <a href="#" data-page="shop" data-category="home">Home & Living (65)</a>
+                <a href="#" data-page="shop" data-category="books">Books (58)</a>
+                <a href="#" data-page="shop" data-category="sports">Sports & Fitness (62)</a>
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <a href="#" data-page="support">Help Center</a>
+                <a href="#">Returns & Exchanges</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Order Tracking</a>
+                <a href="#">Cancel Order</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Contact</a>
+                <a href="#">Become a Seller</a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 GlobaLane India — India's Trusted Ecommerce Platform. All prices in Indian Rupees (₹).</div>
+    </div>
+</footer>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+        <button id="closeCart"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cartItems" class="cart-items-sidebar"></div>
+    <div id="cartTotal" class="cart-total-sidebar"></div>
+    <div class="cart-actions">
+        <button id="clearCartBtn" class="clear-btn">Clear All</button>
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+</div>
+<div id="cartOverlay" class="overlay"></div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
